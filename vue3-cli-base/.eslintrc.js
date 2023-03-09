@@ -18,6 +18,7 @@ module.exports = {
     'operator-linebreak': 'off',
     'arrow-body-style': 'off',
     'newline-per-chained-call': 'off',
+    quotes: 'single', // 強制單引號
   },
   overrides: [
     {
@@ -27,4 +28,4 @@ module.exports = {
       },
     },
   ],
-};
+}

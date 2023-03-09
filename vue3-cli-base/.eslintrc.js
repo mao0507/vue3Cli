@@ -6,6 +6,7 @@ module.exports = {
   extends: ['plugin:vue/vue3-essential', '@vue/airbnb'],
   parserOptions: {
     parser: '@babel/eslint-parser',
+    // requireConfigFile: false,
   },
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
@@ -18,7 +19,7 @@ module.exports = {
     'operator-linebreak': 'off',
     'arrow-body-style': 'off',
     'newline-per-chained-call': 'off',
-    quotes: 'single', // 強制單引號
+    quotes: ['error', 'single'], // 強制單引號
   },
   overrides: [
     {
